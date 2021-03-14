@@ -20,15 +20,18 @@ public class Drink {
     }
 
     //геттеры - методы для приватных переменных
+    public String getName() {
+        return name;
+    }
+    public String getDescription() {
+        return description;
+    }
     public int getImageResourceId() {
         return imageResourceId;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
+    //Строковое представления Drink использует названия напитка.
+    public String toString() {
+        return this.name;
     }
 }
