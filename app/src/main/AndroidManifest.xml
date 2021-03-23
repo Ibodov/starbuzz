@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Starbuzz">
-        <activity android:name=".DrinkCategoryActivity"></activity>
+        <activity
+            android:name=".DrinkActivity"
+            android:label="@string/title_activity_drink"
+            android:theme="@style/Theme.Starbuzz.NoActionBar"></activity>
+        <activity android:name=".DrinkCategoryActivity" />
+        <activity android:name=".FoodCategoryActivity" />
         <activity android:name=".TopLevelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

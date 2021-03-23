@@ -13,7 +13,7 @@ public class Drink {
     };
 
     //Конструктор
-    public Drink(String name, String description, int imageResourceId) {
+    private Drink(String name, String description, int imageResourceId) {
         this.name = name;
         this.description = description;
         this.imageResourceId = imageResourceId;
@@ -26,9 +26,7 @@ public class Drink {
     public String getDescription() {
         return description;
     }
-    public int getImageResourceId() {
-        return imageResourceId;
-    }
+    public int getImageResourceId() { return imageResourceId;}
 
     //Строковое представления Drink использует названия напитка.
     public String toString() {
