@@ -1,5 +1,6 @@
 package com.example.starbuzz;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,13 +13,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DrinkActivity extends AppCompatActivity {
+public class DrinkActivity extends Activity {
     public static final String EXTRA_DRINKNO = "drinkNo";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_drink);
 
         //Получить напиток из данных интента
         int drinkNo = (Integer)getIntent().getExtras().get(EXTRA_DRINKNO);

@@ -8,9 +8,9 @@ public class Food {
 
     //Создаем массив
     public static final Food[] foods = {
-        new Food("Osh", "National food", R.drawable.plov),
-        new Food("Shurbo", "National food", R.drawable.shurpa),
-        new Food("Qurutob", "National food", R.drawable.qurutob)
+//        new Food("Osh", "National food", R.drawable.plov),
+//        new Food("Shurbo", "National food", R.drawable.shurpa),
+//        new Food("Qurutob", "National food", R.drawable.qurutob)
     };
 
 
